@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(90deg,rgb(8, 207, 207),rgb(56, 134, 160));
+    font-family: 'Montserrat', sans-serif;
+}
+.stop-watch{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#watch{
+    width: 500px;
+    margin:3rem auto;
+    padding: 1rem;
+    background: transparent;
+    box-shadow:2px 2px 20px rgba(8, 207, 207, 0.733),
+                -2px -2px 20px rgb(56, 134, 160);
+}
+#watch h1{
+    font-size:80px;
+    color: #ffffff;
+    font-weight: 700;
+}
+.start-stop-btn{
+    text-align: center;
+}
+.start-stop-btn button{
+    border: 0;
+    outline: 0;
+    background: linear-gradient(30deg,blueviolet,#2f5fff);
+    color: #ffffff;
+    width: 8rem;
+    height: 3rem;
+    margin: 0 .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.start-stop-btn button:hover{
+    background: linear-gradient(30deg,#2f5fff,blueviolet);
+    transition: .3s;
+}
+.d-none{
+    display: none;
+}
+
+@media (max-width:550px){
+    #watch{
+        width:320px;
+        padding: 1rem .5rem;
+    }
+    #watch h1{
+        font-size:50px;
+    }
+}
